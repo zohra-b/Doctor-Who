@@ -1,0 +1,52 @@
+@import url('../../globals.css');
+
+.header{
+    
+    display: flex;
+    height: 10.44rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left{
+    display: flex;
+    padding-left:5rem;
+    
+}
+.logo-header{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.pages-route{ 
+    display: inline-block;
+    list-style: none;
+    padding-right: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-right{
+    display: flex;
+    
+}
+
+.search{
+    display:flex ;
+}
+
+.magnifyer{
+    padding-top: 1rem;
+}
+.icon-bar{
+    padding-top: 1rem;
+    padding-right: 6rem;
+}
+
+.social-links{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
