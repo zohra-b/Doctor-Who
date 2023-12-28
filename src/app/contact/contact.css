@@ -1,0 +1,10 @@
+.contact-page{
+    display: grid;
+    grid-template-columns:50% 10% 40%;
+}
+
+.h1{
+  display: grid;
+  margin-left: 5rem;
+  justify-self: center;
+}

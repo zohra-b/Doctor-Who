@@ -1,5 +1,15 @@
+import Form from "../components/Form/Form"
+import { latoBold } from "../fonts"
+import './contact.css'
+import Button from "../components/Button/Button"
+
+
 export default function Contact(){
     return (
-        <h1>CONTACTA</h1>
+        <div className="contact-page">
+        <h1 className="h1">Envía tu mensaje al <br />Doctor</h1>
+        <Form latoBold={latoBold}/>
+        
+        </div>
     )
 }

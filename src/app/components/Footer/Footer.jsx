@@ -8,8 +8,9 @@ export default function Footer(){
             <Image
             className="logo-footer"
             src="/assets/img/logos/logo-cadena.png"
-            width={35}
-            height={35}/>
+            width={26}
+            height={26}
+            alt='transparent doctor who logo'/>
 
             <IconsNavBar/>
         </footer>

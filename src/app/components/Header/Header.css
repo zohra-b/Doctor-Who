@@ -3,14 +3,14 @@
 .header{
     
     display: flex;
-    height: 10.44rem;
+    height: 7.75rem;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-left{
     display: flex;
-    padding-left:5rem;
+    padding-left:3rem;
     
 }
 .logo-header{
@@ -22,7 +22,13 @@
 .pages-route{ 
     display: inline-block;
     list-style: none;
-    padding-right: 2rem;
+   margin-right: 2rem;
+    transition: transform .3s ease-out;
+    cursor: pointer;
+}
+
+.pages-route:hover{
+    transform: scale(1.1);
 }
 
 a{
@@ -50,3 +56,5 @@ a{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
 }
+
+

@@ -8,17 +8,6 @@ import IconsNavBar from './IconsNavBar'
 import { montserratSemiBold} from '@/app/fonts'
 
 
-// const links = [{
-//   label: 'Conoce a',
-//   route: "/app/know"
-// }, {
-//   label: 'Doctores',
-//   route: '/app/doctors/'
-// }, {
-//   label: 'Contacto',
-//   route: '/app/contact/'
-// }
-// ]
 export default function Header() {
   
   return (
@@ -29,12 +18,14 @@ export default function Header() {
         <Link className='pages-route' href='../doctors/'>Doctores</Link>
         <Link  className='pages-route' href='../contact/'>Contacto</Link>
       </ul></nav>
-    <Image
-        className='logo-header'
-        src="/assets/img/logos/logo.png"
-        alt="logo doctor who"
-        width= {190}
-        height= {195} />
+    <Link href='/'>
+        <Image
+          className='logo-header'
+          src="/assets/img/logos/logo.png"
+          alt="doctor who logo"
+          width= {141.42}
+          height= {144.9} />
+      </Link>
 
     <nav className='header-right'>
       <div className='search'>
@@ -44,7 +35,7 @@ export default function Header() {
         alt="magnifyer"
         width= {20}
         height= {20} />
-        <p>Search</p>
+        <p>Buscar</p>
       </div>
       <IconsNavBar />
    </nav>
