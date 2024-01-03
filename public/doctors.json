@@ -1,5 +1,4 @@
-{
-    "doctors": [
+[
       {
         "id":0,
         "doctor": "Primer Doctor",
@@ -127,5 +126,5 @@
         "image": "./assets/img/doctors/Fifteenth_Doctor_Ncuti_Gatwa.jpg"
       }
     ]
-  }
+  
   

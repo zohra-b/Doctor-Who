@@ -35,7 +35,7 @@ export default function Header() {
         alt="magnifyer"
         width= {20}
         height= {20} />
-        <p>Buscar</p>
+        <input type="text" placeholder='Buscar' className='search-input'/>
       </div>
       <IconsNavBar />
    </nav>

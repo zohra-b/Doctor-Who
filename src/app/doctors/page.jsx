@@ -1,5 +1,10 @@
-export default function Doctores(){
+import DoctorsList from "../components/Cards/Cards";
+
+
+export default function Doctores (){
     return (
-        <h1>LISTA DE DOCTORES</h1>
+        <div className="doctors-list-page" >
+        <DoctorsList/>
+        </div>
     )
 }

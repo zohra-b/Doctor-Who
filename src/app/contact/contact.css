@@ -1,10 +1,22 @@
 .contact-page{
     display: grid;
     grid-template-columns:50% 10% 40%;
+    background-image: url(../../../public/assets/img/symbols/symbols.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: 5.875rem;
+    background-position-x: 5rem;
+   
 }
 
 .h1{
+  
   display: grid;
   margin-left: 5rem;
   justify-self: center;
+  font-size: 1.875rem;
+  height: fit-content;
+  background-color: transparent;
+
+  
 }

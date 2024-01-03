@@ -1,0 +1,29 @@
+.doctors-list-page{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 1rem;
+}
+
+.doc-card{
+    width: 14.54rem;
+    margin-bottom: 3.98rem;
+  
+}
+
+.doctor-foto{
+    width: 14.54rem;
+    height: 21.30rem;
+}
+
+.doctor-number{
+    font-size: 1.650rem;
+    font-weight: bold;
+    
+}
+
+.doctor-actor{
+    font-size: 1.2rem;
+
+    font-style: italic;
+}
