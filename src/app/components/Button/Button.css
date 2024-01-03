@@ -1,0 +1,25 @@
+.button{
+    display: grid;
+    width: 175px;
+    height: 40px;
+    background-color: var(--secundary_color);
+    border-radius: 40px;
+    justify-content: center;
+    align-content: center;
+    color: black;
+    font-weight: bold;
+    border: none;
+    margin-top: 15px;
+    transition: transform .3s ease-out;
+    cursor: pointer;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+.toast{
+    background-color: black;
+    color: var(--secundary_color);
+    font-weight: 400;
+}
