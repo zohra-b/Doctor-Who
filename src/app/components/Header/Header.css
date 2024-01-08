@@ -37,24 +37,32 @@ a{
 
 .header-right{
     display: flex;
-    
 }
 
 .search{
-    display:flex ;
+    position: relative;
+    display: inline-block;
+    border: none;
 }
 
-.magnifyer{
-    padding-top: 1rem;
+.search-icon{
+    position: absolute;
+    top: 50%;
+    left: 1.125rem; 
+    transform: translateY(-50%);
+    padding-top: 1.250rem;
+}
+
+.search-input {
+    padding: 1.125rem 0 .125rem 2.825rem;
+    border:none;
+   
 }
 .icon-bar{
-    padding-top: 1rem;
+    padding-top: 1.125rem;
     padding-right: 6rem;
 }
-
 .social-links{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
 }
-
-

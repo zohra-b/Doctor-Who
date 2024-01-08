@@ -1,32 +1,22 @@
 import Image from 'next/image'
-import './page.module.css'
+
 
 export default function Home() {
   return (
     <main className='main'>
       <section className='carrusel'>
-<div className='slider'>
-    <Image className='images'
-      src="/assets/img/carrusel/carrusel-1.webp"
+    <Image className='image-1'
+      src="/assets/img/carrusel/carrusel-1.jpg"
       alt=""
-      width={1140}
-      height={536} />
-     
+      width={1110}
+      height={500} />
+
     
-  <Image className='images'
-      src="/assets/img/carousel/carrusel-2.jpg"
+  <Image className='image-2'
+      src="/assets/img/carrusel/carrusel-2.jpg"
       alt=""
-      width={1140}
-      height={536}
-            
-     
-    />
-
-</div>
-
-
-
-
+      width={1110}
+      height={500} />
 
 </section>
     </main>

@@ -4,35 +4,23 @@ import './Button.css'
 import { Toaster, toast } from 'sonner'
 
 export default function Button (){
+    const Button=({onsubmit})=>{
+        
     return(
-        <>
-    <button 
-    className="button" 
+    
+    <button
+    className={`button toast`}
     type='submit' 
-    onClick={()=>{
-        toast.success('Your message has been sent',{
-            position: "top-center",
-            duration: 5000,
-            
-        }
+    onClick={onsubmit}
+    >Send</button>
 
-        )}}>Send</button>
-    <Toaster
-  />
-    </>
 
-    )
-}
-
-export function VerMásButton (){
-    return(
-        <>
-    <button 
-    className="button" 
-    type='button'       
-    >Ver más</button>
-   
-    </>
-
-    )
-}
+)
+}}
+// {()=>{
+    //     toast.success('Your message has been sent',{
+        //         position: "top-center",
+        //         duration: 3000,
+        //     }
+        //     )}}
+        {/* <Toaster/> */}

@@ -1,0 +1,71 @@
+return(
+    <div className='search'>
+        <div className='search-icon'>
+            <Image
+                className='magnifier'
+                src="/assets/img/icons/material-symbols-light_search.svg"
+                alt="magnifier"
+                width={20}
+                height={20}
+            />
+        </div>
+        <input
+            type="text"
+            placeholder='Buscar'
+            className='search-input'
+        />
+        </div>
+        )
+        }
+
+
+// import { useState } from 'react';
+// import doctors from '../../../../public/doctors.json';
+// import Image from 'next/image';
+
+// export default function DoctorSearch() {
+//     const [searchQuery, setSearchQuery] = useState('');
+//     const [searchResults, setSearchResults] = useState([]);
+
+//     // Function to update the search query
+//     const handleSearchInput = (event) => {
+//         const searchTerm = event.target.value.toLowerCase().trim();
+//         setSearchQuery(event.target.value);
+//         searchDoctors(searchTerm);
+//     };
+
+//     // Function to perform the search
+//     const searchDoctors = (query) => {
+//         const results = doctors.filter((doctor) =>
+//             doctor.doctor.toLowerCase().includes(query)
+//         );
+//         setSearchResults(results);
+//     };
+
+//     return (
+//         <div className='search'>
+//             <div className='search-icon'>
+//                 <Image
+//                     className='magnifier'
+//                     src="/assets/img/icons/material-symbols-light_search.svg"
+//                     alt="magnifier"
+//                     width={20}
+//                     height={20}
+//                 />
+//             </div>
+//             <input
+//                 type="text"
+//                 placeholder='Buscar'
+//                 className='search-input'
+//                 value={searchQuery}
+//                 onChange={handleSearchInput}
+//             />
+            
+//             <ul>
+//                 {searchResults.map((doctor) => (
+//                     <li key={doctor.id}>{doctor.doctor}</li>
+//                 ))}
+//             </ul>
+//         </div>
+//     );
+// }

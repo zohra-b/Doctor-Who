@@ -1,4 +1,4 @@
-import DoctorsList from "../components/Cards/Cards";
+import DoctorsList from "../components/DoctorsList/DoctorsList";
 
 
 export default function Doctores (){

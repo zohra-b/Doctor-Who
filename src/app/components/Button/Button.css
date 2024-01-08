@@ -17,9 +17,3 @@
 .button:hover{
     transform: scale(1.05);
 }
-
-.toast{
-    background-color: black;
-    color: var(--secundary_color);
-    font-weight: 400;
-}

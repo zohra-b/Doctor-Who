@@ -16,3 +16,12 @@
   max-width: 100vw;
   min-height: 97vh;
 }
+
+.carrusel{
+  display: flex;
+  justify-content: center;
+}
+
+.image-2{
+  display: none;
+}
