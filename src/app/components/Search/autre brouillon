@@ -1,0 +1,81 @@
+const [searchQuery, setSearchQuery] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
+    const [showResults, setShowResults] = useState(false); 
+
+ 
+    const handleSearchInput = (event) => {
+        const query = event.target.value;
+        setSearchQuery(query);
+        searchDoctors(query);
+    };
+
+    
+    const searchDoctors = (query) => {
+        const searchTerm = query.toLowerCase().trim();
+        const results = doctors.filter((doctor) =>
+            doctor.doctor.toLowerCase().includes(searchTerm)
+        );
+        setSearchResults(results);
+        setShowResults(true); 
+        console.log('Search Query:', query);
+        console.log('Search Results:', results);
+    };
+
+    return (
+        <div className='search'>
+            <div className='search-icon'>
+                <Image
+                    className='magnifier'
+                    src="/assets/img/icons/material-symbols-light_search.svg"
+                    alt="magnifier"
+                    width={20}
+                    height={20}
+                />
+            </div>
+            <input
+                type="text"
+                placeholder='Buscar'
+                className='search-input'
+                value={searchQuery}
+                onChange={handleSearchInput}
+            />
+
+ 
+            {showResults && (
+                <DoctorCard searchResults={searchResults} />
+            )}
+        </div>
+    );
+
+    --------------------------------------------------
+
+    import { useState } from 'react';
+import { GetStaticProps } from 'next';
+
+import doctors from '/public/doctors.json';
+
+export default function DoctorDetails({doctor}) {
+    const { id, doctor: doctor, image, actor, screen_time } = doctor;
+
+    return (
+        <div className="doctor-details">
+            <h1>Doctor: {doctorName}</h1>
+            <img src={image} alt={`Foto de ${doctorName}`} />
+            <p>ID: {id}</p>
+            <p>Actor: {actor}</p>
+            <p>Screen Time: {screen_time}</p>
+            {/* Display other details about the doctor */}
+        </div>
+    );
+}
+
+export async function GetStaticProps(context) {
+    const { id } = context.params;
+    const doctor = doctors.find((doctor) => doctor.id === id);
+
+    return {
+        props: {
+            doctor,
+        },
+    };
+}

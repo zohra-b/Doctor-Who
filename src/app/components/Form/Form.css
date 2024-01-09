@@ -37,3 +37,22 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+.form-button{
+    display: grid;
+    width: 175px;
+    height: 40px;
+    background-color: var(--secundary_color);
+    border-radius: 40px;
+    justify-content: center;
+    align-content: center;
+    color: black;
+    font-weight: bold;
+    border: none;
+    margin-top: 15px;
+    transition: transform .3s ease-out;
+    cursor: pointer;
+}
+.form-button:hover{
+    transform: scale(1.05);
+}

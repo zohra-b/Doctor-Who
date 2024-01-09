@@ -13,10 +13,14 @@
   
   display: grid;
   margin-left: 5rem;
-  justify-self: center;
+  text-align: center;
   font-size: 1.875rem;
   height: fit-content;
   background-color: transparent;
 
   
+}
+
+form-component{
+  display: grid;
 }

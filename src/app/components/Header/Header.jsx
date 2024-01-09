@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -5,7 +6,10 @@ import Image from 'next/image'
 
 import './Header.css'
 import IconsNavBar from './IconsNavBar'
+import DoctorSearch from '../Search/Search'
+import DoctorCard from '../Search/page'
 import { montserratSemiBold} from '@/app/fonts'
+import Search from '../Search/Search'
 
 
 export default function Header() {
@@ -29,15 +33,21 @@ export default function Header() {
 
     <nav className='header-right'>
       <div className='search'>
-        <Image
-        className='magnifyer'
-        src="\assets\img\icons\material-symbols-light_search.svg"
-        alt="magnifyer"
-        width= {20}
-        height= {20} />
-        <input type="text" placeholder='Buscar' className='search-input'/>
-      </div>
+      <Search/>
+      </div> 
       <IconsNavBar />
-   </nav>
- 
+    </nav>
   </header>)}
+        {/* <div className='search-icon'>
+          <Image
+            className='magnifyer'
+            src="\assets\img\icons\material-symbols-light_search.svg"
+            alt="magnifyer"
+            width= {20}
+            height= {20} />
+        </div>
+        <input 
+          type="text" 
+          placeholder='Buscar' 
+          className='search-input'/>
+      </div> */}
